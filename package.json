@@ -1,7 +1,6 @@
 {
   "name": "9click-education",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "start": "node ./server/bin/www"
   },
@@ -15,6 +14,7 @@
     "fs": "0.0.1-security",
     "mongoose": "^4.11.2",
     "morgan": "~1.8.1",
+    "path": "^0.12.7",
     "serve-favicon": "~2.4.2",
     "uuid": "^3.1.0"
   }

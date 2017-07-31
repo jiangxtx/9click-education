@@ -25,3 +25,11 @@ npm start
 ### 参考资料
 > http://expressjs.com/zh-cn/
 https://cnodejs.org/topic/504b4924e2b84515770103dd
+
+## 待解决问题
+
+1. package-lock.json 文件的作用是什么？（2017-7-31 20:12）
+
+2. 启动 npm run start 时，出现如下图错误，什么原因？（2017-7-31 20:49）
+![mark](http://ojjslhnls.bkt.clouddn.com/blog/20170731/204804467.png)
+
