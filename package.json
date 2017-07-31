@@ -1,9 +1,9 @@
 {
-  "name": "singular-education-server",
-  "version": "0.0.0",
+  "name": "9click-education",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./server/bin/www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",

@@ -14,8 +14,8 @@ var app = express();
 
 //  连接数据库
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/singular-education');
-mongoose.connection.on('connected', console.info.bind(console, '连接成功'));
+mongoose.connect('mongodb://localhost/9click-education');
+mongoose.connection.on('connected', console.info.bind(console, '...Connect mongoDB Successfully!'));
 mongoose.connection.on('error', function (err) {
     console.log('Mongoose connection error: ' + err);
 });

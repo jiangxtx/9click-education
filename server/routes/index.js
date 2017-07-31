@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.render('web-index');
 });
-router.get('/cz2r-public', function(req, res, next) {
+router.get('/9clock-manage', function(req, res, next) {
   res.render('index', { title: '后台管理' });
 });
 
