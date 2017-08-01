@@ -1,0 +1,166 @@
+.divide {
+    margin: 10px;
+}
+.cert-item {
+    line-height: 60px;
+    border: 1px solid #ededed;
+    padding: 8px;
+    text-align: center;
+}
+
+.home {
+    .backg {
+        background-position: center;
+
+        /*background-repeat: no-repeat;*/
+        /* background-attachment: fixed; */
+    }
+
+    img {
+        width: 100%;
+    }
+    .row {
+        margin-bottom: 32px;
+    }
+
+    .home-banner-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-title {
+        text-align: center;
+        padding: 48px;
+        font-size: 32px;
+        font-weight: 600;
+        /*border-bottom: 1px solid #ededed;*/
+        /* display: inline-block; */
+    }
+
+    .carousel {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .study {
+        background-image: url(../../img/home/back-studycontent.jpg);
+        background-size: cover;
+        min-height: 20rem;
+
+        .home-title {
+            color: #fff;
+        }
+        .study-item {
+            text-align: center;
+        }
+        .study-item img {
+            max-width: 100%;
+            width: inherit;
+        }
+        .studyContent {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            text-align: center;
+            width: 100%;
+            line-height: 2.2;
+            overflow: auto;
+        }
+        .studyContent p {
+            line-height: 1.2;
+        }
+    }
+
+    .service {
+        background-repeat: no-repeat;
+        background-image: url(../../img/home/back-server.jpg);
+        min-height: 570px;
+
+        .service-item {
+            text-align: center;
+            margin-top: 120px;
+        }
+        .service-title {
+            font-size: 16px;
+            margin: 24px 0;
+            display: inline-block;
+        }
+        .serviceContent p {
+            line-height: 1.3;
+        }
+    }
+
+    .singular {
+        .img {
+            text-align: center;
+        }
+        .singular-descp {
+            line-height: 2.5;
+            margin-bottom: 12px;
+        }
+    }
+    
+    .team {
+        background-image: url(../../img/home/back-team.jpg);
+
+        .subtitle {
+            text-align: center;
+            margin-top: -32px;
+            margin-bottom: 32px;
+            font-size: 18px;
+        }
+    }
+
+    .unit {
+        //background-image: url(../../img/home/back-team.jpg);
+        background: #2f5c89;
+        .home-title {
+            color: #eee;
+        }
+        .unit-item {
+            display: inline-block;
+            width: 20%;
+            text-align: center;
+        }
+        .unit-item:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        .unit-img {
+            max-width: 100%;
+            width: initial;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .service-item-0 {
+        position: absolute;
+        left: -46px;
+    }
+    .service-item-2 {
+        position: absolute;
+        right: 0;
+    }
+}
+@media (min-width: 992px) {
+    .service-item-0 {
+        position: absolute;
+        left: 18%;
+    }
+    .service-item-2 {
+        position: absolute;
+        right: 32%;
+    }
+}
+@media (min-width: 1200px) {
+    .service-item-0 {
+        position: absolute;
+        left: 38%;
+    }
+    .service-item-2 {
+        position: absolute;
+        right: 52%;
+    }
+}

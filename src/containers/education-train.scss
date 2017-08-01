@@ -1,0 +1,91 @@
+.trainMetohd-wrap {
+  position: relative;
+  min-height: 50rem;
+  width: 80%;
+
+  .method-img-l {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+  }
+  .method-img-m {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+  }
+  .method-img-r {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.online {
+
+  .online-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ededed;
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .content {
+      margin-left: 18px;
+
+      .online-func {
+        width: 30%;
+        display: inline-block;
+        padding: 12px;
+        text-align: left;
+      }
+
+      .func-title {
+        color: #2f5c89;
+        font-size: 18px;
+      }
+      .func-title-no {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: '隶书';
+        margin-right: 5px;
+      }
+      .func-descp {
+        margin-left: 24px;
+      }
+
+    }
+  }
+
+}
+.trainDetail {
+  .trainDetail-item {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .content {
+    margin-left: 18px;
+  }
+  .train-style-item {
+    margin-bottom: 24px;
+  }
+  .train-style-item-key {
+    font-weight: 600;
+    color: #999;
+  }
+
+  .list-flag {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #666;
+    background: #666;
+    margin-right: 12px;
+  }
+}

@@ -2,6 +2,7 @@
 ### Node template
 # Logs
 logs
+*.log
 node_modules/mpath/bench.log
 npm-debug.log*
 yarn-debug.log*
@@ -60,5 +61,7 @@ typings/
 .env
 
 .idea
-package-lock.json
+.idea/workspace.xml
+server/package-lock.json
 
+dist/

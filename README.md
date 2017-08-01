@@ -1,6 +1,9 @@
 # 9click-education
 “九点教育系统”，旨在通过该系统来学习 webpack 的 code-spliting 和 react 服务端渲染两大核心技术。
 
+> 青少年就像是八九点钟的太阳，明亮而不耀眼，光芒而不炽烈。
+> 九大板块的教育体系，助您成长的路上一臂之力。
+
 ## server 目录
 > 基于 NodeJS+mongodb+express 搭建的 9click-education后台新闻管理以及相关接口服务端
 

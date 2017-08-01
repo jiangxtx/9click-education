@@ -1,0 +1,83 @@
+.aboutUs {
+
+  .about-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+   /* border-bottom: 1px solid #ededed;*/
+
+    p {
+      margin-top: 20px;
+      line-height: 2.5;
+    }
+
+    .print-img {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .top-img {
+      margin: 44px;
+    }
+
+    .info-row {
+      margin-bottom: 10px;
+    }
+
+    .info-block {
+      margin-right: 30px;
+    }
+
+    .info-title {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .QRcode {
+      text-align: center;
+    }
+
+    .QRcode-img {
+      /*width: 200px;*/
+    }
+
+    .QRcode-descr {
+      font-size: 11px;
+    }
+  }
+
+}
+
+.team {
+  padding: 12px;
+  /*background-image: url(../../img/home/back-team.jpg);*/
+}
+
+.partner {
+
+  .partner-row {
+    margin: 0 4%;
+    border-bottom: 1px solid #eee;
+    padding: 32px 0;
+
+    .parter-imgwrap {
+      text-align: center;
+    }
+  }
+  .partner-row:last-child {
+    border-bottom: none;
+  }
+
+  .partner-img {
+    width: 190px;
+    height: 70px;
+  }
+}
+
+.recruit {
+  margin: 30px 30px;
+  line-height: 2;
+  .name {
+    font-size: 17px;
+    font-weight: bold;
+  }
+}

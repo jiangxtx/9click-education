@@ -1,0 +1,111 @@
+.studEduc {
+
+  .educ-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ededed;
+
+    p {
+      line-height: 2.5;
+    }
+
+    .robot-wrap {
+      position: relative;
+      min-height: 550px;
+
+      .robot-img-l {
+        position: absolute;
+        bottom: 0;
+      }
+      .robot-img-m {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        z-index: 5;
+      }
+      .robot-img-r {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .descp-l {
+        width: 46%;
+      }
+      .descp-r {
+        bottom: 0;
+        right: 0;
+        width: 40%;
+      }
+      .descp-l, .descp-r {
+        position: absolute;
+        padding: 0 8px;
+        /*border: 1px solid #f0f0f0;*/
+        border-radius: 4px;
+      }
+      /*.descp-l:hover, .descp-r:hover {
+        background-color: #f0f0f0;
+        z-index: 10;
+      }*/
+    }
+
+    .print-img {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+  }
+
+  .itemTitle {
+    text-align: center;
+    font-size: 18px;
+    margin: 24px;
+    font-weight: 600;
+  }
+
+}
+
+.studEduc-study {
+
+  .studyItem {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #efefef;
+
+    .item-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .item-content {
+      margin-left: 18px;
+
+      .prod-value {
+        height: 0;
+        width: 88%;
+        border-top: 40px solid #e5c3b2;
+        border-left: 0 solid;
+        border-right: 40px solid transparent;
+        margin-bottom: 12px;
+        position: relative;
+      }
+      .prod-value-descp {
+        position: absolute;
+        top: -34px;
+        color: #fff;
+        padding-left: 12px;
+      }
+    }
+
+    .function {
+      text-align: center;
+
+      .funtion-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+  }
+
+}
