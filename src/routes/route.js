@@ -4,7 +4,7 @@ import '../css/public/public.css'
 
 import React, { Component } from 'react'
 import {
-    Route, Router, hashHistory, IndexRoute,
+    Route, Router, hashHistory, IndexRoute, Redirect,
 } from 'react-router'
 import Home from '../containers/home/Home'
 import IndexHead from '../containers/home/Header'
@@ -31,6 +31,7 @@ import AboutusPartner from '../containers/AboutUsPartner.container'
 import AboutusRecruit from '../containers/AboutUsRecruit.container'
 import AboutusContact from '../containers/AboutUsContact.container'
 
+import NotFoundPage from '../containers/NotFoundPage.container'
 
 const Roots = (props) => (
     <div>
@@ -67,6 +68,10 @@ const HomeRoute = (
                 <Route path={ navbarList[4].subnav[3].link } component={ AboutusRecruit } />
                 <Route path={ navbarList[4].subnav[4].link } component={ AboutusContact } />
             </Route>
+
+            {/* 如果都不匹配，重定向到 404 */}
+            <Redirect from="*" to="/404"></Redirect>
+            <Route path='/404' component={ NotFoundPage } />
 
         </Route>
     </Router>

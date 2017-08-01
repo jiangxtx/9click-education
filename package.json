@@ -12,7 +12,7 @@
     "vendorbuild": "webpack --progress --colors --config webpack.dll.production.config.js",
     "vendor": "webpack --progress --colors --config webpack.dll.config.js",
     "build": "webpack --progress --colors --config webpack.config.production.js",
-    "start": "webpack-dev-server --port 8100 --devtool eval --progress --hot --colors  --history-api-fallback  --display-error-details webpack.config.js"
+    "start": "webpack-dev-server --port 5499 --devtool eval --progress --hot --colors  --history-api-fallback  --display-error-details webpack.config.js"
   },
   "devDependencies": {
     "antd": "^2.4.3",

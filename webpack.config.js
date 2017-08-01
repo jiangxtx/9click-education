@@ -12,6 +12,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         publicPath: '/static/',
         filename: "[name].js",
+        chunkFilename: 'chunk.[name].[chunkhash:5].js',
         library: '[name]'
     },
     /*

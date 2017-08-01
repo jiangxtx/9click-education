@@ -7,13 +7,13 @@ var path = require('path');
 module.exports = {
     //devtool: 'eval-source-map',
     entry: {
-        'index'     : path.join(__dirname, 'public/index.js'),
-        // 'prodTest'     : path.join(__dirname, 'public/prod-test.js'),
+        'bundle'     : path.join(__dirname, 'public/index.js'),
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/static/',
+        publicPath: 'static',
         filename: "[name].js",
+        chunkFilename: 'chunk.[name].[chunkhash:5].js',
         library: '[name]'
     },
     // ,
