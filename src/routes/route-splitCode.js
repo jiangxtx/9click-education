@@ -1,5 +1,5 @@
 
-import 'antd/dist/antd.min.css'
+// import 'antd/dist/antd.min.css'
 import '../css/public/public.css'
 
 import React, { Component } from 'react'
@@ -54,7 +54,7 @@ const rootRoute = {
                                 }, 'trainOnline')
                             },
                         }, {
-                            path: `train/detail/:tid`,
+                            path: `detail/:tid`,
                             getComponent(nextState, callback) {
                                 require.ensure([], require => {
                                     callback(null, require('../containers/EducationTrainDetail.container').default)

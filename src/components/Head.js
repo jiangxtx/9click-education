@@ -1,4 +1,3 @@
-import 'antd/dist/antd.css'
 import '../css/home/index_head.css'
 
 import React ,{Component}from  'react'

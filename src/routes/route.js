@@ -1,5 +1,5 @@
 
-import 'antd/dist/antd.min.css'
+// import 'antd/dist/antd.min.css'
 import '../css/public/public.css'
 
 import React, { Component } from 'react'

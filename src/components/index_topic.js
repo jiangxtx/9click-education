@@ -5,8 +5,9 @@
 
 import React,{Component} from 'react'
 import {Carousel,Spin} from 'antd'
-import 'antd/dist/antd.min.css'
-import { fetchAjax, FETCH_FILE_URL } from '../Tool/wrap.fetch'
+
+// import 'antd/dist/antd.min.css'
+// import { fetchAjax, FETCH_FILE_URL } from '../Tool/wrap.fetch'
 
 class IndexTopic extends Component{
     constructor(props){
