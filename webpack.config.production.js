@@ -3,6 +3,8 @@
  */
 var webpack = require('webpack');
 var path = require('path');
+var ExtractTextPlugin =  require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
     //devtool: 'eval-source-map',
@@ -13,7 +15,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         publicPath: 'static',
         filename: "[name].js",
-        chunkFilename: 'chunk.[name].[chunkhash:5].js',
+        chunkFilename: 'chunk.[name].[chunkhash:5].js',  // async loading JS files.
         library: '[name]'
     },
     // ,
@@ -28,10 +30,18 @@ module.exports = {
     // },
     module: {
         loaders: [
-            // { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.less$/, loader: 'style-loader!css!less' },
-            { test: /\.scss$/, loader: 'style-loader!css!sass' },
+            {
+                test: /\.css$/,
+                // loader: 'style-loader!css-loader',
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+            }, {
+                test: /\.less$/,
+                loader: 'style-loader!css!less'
+            }, {
+                test: /\.scss$/,
+                loader: 'style-loader!css!sass',
+                // loader: ExtractTextPlugin.extract('style', 'css?modules&camelCase&importLoaders=1&localIdentName=[hash:base64:8]!postcss!sass'),
+            },
 
             { test: /\.(jpeg|jpg|gif|png)$/, loader: "url-loader?limit=8192&name=images/[hash:8].[name].[ext]" },
 
@@ -43,7 +53,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader",
+                loader: "babel",
                 query: {
                     presets:['react', 'es2015']
                 }
@@ -56,6 +66,7 @@ module.exports = {
             },
         ],
     },
+    postcss: [ autoprefixer({ browsers: ['> 5%'] })],
     resolve:{
         extensions:['','.js','.json','.css','.less'],
         modulesDirectories: [
@@ -84,5 +95,6 @@ module.exports = {
             }
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
+        new ExtractTextPlugin('style.css')
     ]
 };

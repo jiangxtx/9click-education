@@ -36,3 +36,18 @@ https://cnodejs.org/topic/504b4924e2b84515770103dd
 2. 启动 npm run start 时，出现如下图错误，什么原因？（2017-7-31 20:49）
 ![mark](http://ojjslhnls.bkt.clouddn.com/blog/20170731/204804467.png)
 
+## 打包
+
+没有配置 css 打包的情形：
+
+![mark](http://ojjslhnls.bkt.clouddn.com/blog/20170802/183722039.png)
+
+配置了 css 单独打包的效果：
+```javascript
+{
+    test: /\.css$/,
+    // loader: 'style-loader!css-loader',
+    loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+}
+```
+![mark](http://ojjslhnls.bkt.clouddn.com/blog/20170802/185515208.png)
