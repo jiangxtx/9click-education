@@ -7,7 +7,7 @@ import React ,{ Component } from 'react'
 import { Modal } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../layout'
 
-import '../css/containers/student-education.scss'
+import '../css/containers/student-education.less'
 
 import advantage_img from '../img/stud-educ/study-3advantages.jpg'
 import prodFunction_img from '../img/stud-educ/study-prodFunction.jpg'

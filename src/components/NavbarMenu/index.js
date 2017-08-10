@@ -8,7 +8,7 @@ import { Spin, Menu } from 'antd'
 import { Link } from 'react-router'
 // import _throttle from 'lodash.throttle'
 
-import './index.scss'
+import './index.less'
 
 export default class Main extends Component {
     constructor(props) {

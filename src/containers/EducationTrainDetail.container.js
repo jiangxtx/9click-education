@@ -9,7 +9,7 @@ import { Container, ContainerFluid, Row, Col } from '../layout'
 import Breadcrumb from '../components/BreadCrumb'
 import { teacherTrainData } from '../data/index-html-mock.data'
 
-import './education-train.scss'
+import './education-train.less'
 
 const columns = [
     {

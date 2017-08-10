@@ -8,7 +8,7 @@ import { Spin, Icon } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../../layout'
 import TitleWithGradient from '../TitleWithGradientBackcolor'
 
-import './index.scss'
+import './index.less'
 
 export default class Main extends Component {
     constructor(props) {

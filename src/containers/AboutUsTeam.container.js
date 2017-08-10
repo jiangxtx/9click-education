@@ -10,7 +10,7 @@ import NavbarMenu from '../components/NavbarMenu'
 import ShowTitle from '../components/TitleWithGradientBackcolor'
 import TeamNumberSlider from '../components/TeamNumberSlider'
 
-import '../css/containers/about-us.scss'
+import '../css/containers/about-us.less'
 
 export default class Main extends Component {
     constructor(props) {

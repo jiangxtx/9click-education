@@ -7,7 +7,7 @@ import React ,{ Component, PropTypes } from 'react'
 import { Pagination, notification } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../../layout'
 
-import './index.scss'
+import './index.less'
 
 const showInform = (data) => {
     let type = data.type;

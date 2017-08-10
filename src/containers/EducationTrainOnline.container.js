@@ -10,7 +10,7 @@ import EducationTrainInfo from '../components/EducationTrainInfo'
 import NavbarMenu from '../components/NavbarMenu'
 import { trainList } from '../Config/proj-config'
 
-import './education-train.scss'
+import './education-train.less'
 
 import advantages_img from '../img/train/5advantages.jpg'
 

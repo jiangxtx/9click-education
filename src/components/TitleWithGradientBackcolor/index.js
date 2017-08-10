@@ -5,7 +5,7 @@
 
 import React ,{ Component } from 'react'
 
-import './index.scss'
+import './index.less'
 
 export default class Main extends Component {
     constructor(props) {

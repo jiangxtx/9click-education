@@ -7,7 +7,7 @@ import React ,{ Component } from 'react'
 import { Spin, Button } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../../layout'
 
-import './index.scss'
+import './index.less'
 
 export default class Main extends Component {
     constructor(props) {

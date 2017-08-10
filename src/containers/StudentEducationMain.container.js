@@ -8,7 +8,7 @@ import { Modal } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../layout'
 
 import ShowTitle from '../components/TitleWithGradientBackcolor'
-import '../css/containers/student-education.scss'
+import '../css/containers/student-education.less'
 
 import { studEducList } from '../Config/proj-config'
 import t3Dprint from '../img/stud-educ/3Dprint.jpg'

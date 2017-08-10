@@ -10,7 +10,7 @@ import TitleWithGradient from '../components/TitleWithGradientBackcolor'
 import Breadcrumb from '../components/BreadCrumb'
 import { custom_fetch } from '../Tool/fetchConfig'
 
-import '../css/containers/success-case.scss'
+import '../css/containers/success-case.less'
 
 export default class Main extends Component {
     constructor(props) {

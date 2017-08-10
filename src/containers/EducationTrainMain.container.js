@@ -10,7 +10,7 @@ import EducationTrainInfo from '../components/EducationTrainInfo'
 import NavbarMenu from '../components/NavbarMenu'
 import { trainList } from '../Config/proj-config'
 
-import './education-train.scss'
+import './education-train.less'
 
 import method_l from '../img/train/train-method-l.jpg'
 import method_m from '../img/train/train-method-m.jpg'

@@ -10,7 +10,7 @@ import TitleWithGradient from '../components/TitleWithGradientBackcolor'
 import { custom_fetch, FETCH_URL } from '../Tool/fetchConfig'
 import { PaginateMid } from '../components/AntdWrapComponent'
 
-import '../css/containers/success-case.scss'
+import '../css/containers/success-case.less'
 
 const pageSize = 5;
 

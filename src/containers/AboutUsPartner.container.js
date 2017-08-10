@@ -8,7 +8,7 @@ import {Modal} from 'antd'
 import {Container, ContainerFluid, Row, Col} from '../layout'
 import NavbarMenu from '../components/NavbarMenu'
 import ShowTitle from '../components/TitleWithGradientBackcolor'
-import '../css/containers/about-us.scss'
+import '../css/containers/about-us.less'
 
 import CoopOutdoor from '../img/aboutus/coop-outdoor.jpg'
 import c20mooc from '../img/aboutus/c20mooc.png'

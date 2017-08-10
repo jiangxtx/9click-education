@@ -9,7 +9,7 @@ import {Container, ContainerFluid, Row, Col} from '../layout'
 import NavbarMenu from '../components/NavbarMenu'
 
 import ShowTitle from '../components/TitleWithGradientBackcolor'
-import '../css/containers/about-us.scss'
+import '../css/containers/about-us.less'
 
 import CoopLocation from '../img/aboutus/coop-location.jpg'
 import QRcode from '../img/home/QRcode.png'

@@ -8,7 +8,7 @@ import { Modal } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../layout'
 import TitleWithGradient from '../components/TitleWithGradientBackcolor'
 
-import '../css/containers/success-case.scss'
+import '../css/containers/success-case.less'
 
 import banner_1 from '../img/case/case-banner-1.jpg'
 import cover_1 from '../img/case/case-cover-1.jpg'

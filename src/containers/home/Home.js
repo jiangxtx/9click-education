@@ -1,4 +1,4 @@
-import '../../css/home/home.scss'
+import '../../css/home/home.less'
 
 import React ,{Component}from 'react'
 import Slider from 'react-slick'

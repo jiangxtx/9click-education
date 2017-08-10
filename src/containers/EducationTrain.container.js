@@ -9,7 +9,7 @@ import { Container, ContainerFluid, Row, Col } from '../layout'
 import NavbarMenu from '../components/NavbarMenu'
 import { trainList } from '../Config/proj-config'
 
-import './education-train.scss'
+import './education-train.less'
 
 import banner_1 from '../img/train/train-banner-1.jpg'
 

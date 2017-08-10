@@ -9,7 +9,7 @@ import Slider from 'react-slick'
 import { Container, ContainerFluid, Row, Col } from '../../layout'
 import { slider_setting } from '../../Config/proj-config'
 
-import './index.scss'
+import './index.less'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
