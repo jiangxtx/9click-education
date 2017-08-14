@@ -55,3 +55,9 @@ https://cnodejs.org/topic/504b4924e2b84515770103dd
 ## git 分支：sevrender
 
 用于呈现服务端渲染的代码托管。
+
+server-bkup 目录为之前客户端渲染的暂存文件server 更名而来，估计以后无实际用途。
+
+服务端渲染文件存放于 server 目录之中，有待于进一步优化。
+
+——jiangxtx 2017-8-14 20:08
