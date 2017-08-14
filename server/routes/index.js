@@ -1,12 +1,16 @@
-var express = require('express');
-var router = express.Router();
+/**
+ * Created by Jiangxtx on 2017/8/14-19:14.
+ * Description:
+ */
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('web-index');
-});
-router.get('/9clock-manage', function(req, res, next) {
-  res.render('index', { title: '后台管理' });
-});
+import Router from 'koa-router'
+import user from '../controllers/user'
 
-module.exports = router;
+const router = new Router({
+    prefix: '/user',
+})
+
+router.get('/getUserInfo', user.getUserInfo())
+router.get('/getUsersList', user.getUsersList())
+
+export default router

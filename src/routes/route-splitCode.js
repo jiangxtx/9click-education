@@ -17,12 +17,18 @@ const Roots = (props) => (
     </div>
 )
 
+// Hook for server
+if (typeof require.ensure !== 'function') {
+    require.ensure = function (dependencies, callback) {
+        callback(require)
+    }
+}
 
 /**
  * 按需加载之后，我们需要让路由动态加载组件。将路由拆出来（因为路由庞大之后全部写在一起会很难看）。
  * @type {{path: string, indexRoute: {}}}
  */
-const rootRoute = {
+const clientRootRoute = {
     childRoutes: [
         {
             path: '/',
@@ -148,6 +154,7 @@ const rootRoute = {
         }
     ]
 }
-const RouterJSX = <Router history={hashHistory} routes={rootRoute} />
+const RouterJSX = <Router history={hashHistory} routes={ clientRootRoute } />
 
 export default RouterJSX
+export { clientRootRoute }

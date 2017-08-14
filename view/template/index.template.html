@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九点教育</title>
+    <link ref="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon"/>
+    <!-- 手动引入 antd.css，否则在js 中导入的话，打包出来的 index.js（bundle.js) 太大了！！2017-8-2 -->
+    <link rel="stylesheet" href="../../libs/antd/antd.min.css">
+</head>
+<body>
+    <div id="root">
+        <%- root %>
+    </div>
+
+    <script>
+        window.REDUX_STATE = <%- JSON.stringify(state) %>
+    </script>
+
+    <!-- judge currrent browser Version  -->
+    <script src="../../src/Tool/util.browser.js"></script>
+
+    <!-- 适配 IE 兼容性，IE9 以下不考虑兼容。尤其是适配 IE9，部分在IE10 中也有问题。 -->
+    <script src="../../src/Tool/polyfill.js"></script>
+    <script src="../../src/Tool/media.match.min.js"></script>
+
+    <!-- 首先引入公用的第三方库，诸如：react/antd/react-dom/react-router...详见 webpack.config.js 配置 -->
+    <script src="../../libs/libv1.js" charset="utf-8"></script>
+
+    <script src="../static/index.js" charset="utf-8"></script>
+    <!--<script src="../dist/bundle.js" charset="utf-8"></script>-->
+</body>
+</html>
