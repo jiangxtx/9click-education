@@ -11,6 +11,7 @@ import { match, RouterContext } from 'react-router'
 import { Provider } from 'react-redux'
 
 import { clientRootRoute } from '../../src/routes/route-splitCode'
+import mock_server_route from '../../src/routes/route-for-server-render'
 
 // 模拟服务端的 react-redux 数据
 const store = {
@@ -25,7 +26,7 @@ const store = {
 async function clientRoute(ctx, next) {
     let _renderProps;
 
-    match({ routes: clientRootRoute, location: ctx.url }, (error, redirectLocation, renderProps) => {
+    match({ routes: mock_server_route, location: ctx.url }, (error, redirectLocation, renderProps) => {
         _renderProps = renderProps
     })
 

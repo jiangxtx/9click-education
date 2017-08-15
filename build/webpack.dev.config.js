@@ -24,8 +24,19 @@ module.exports = {
     module: {
         loaders: [
             // { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.less$/, loader: 'style-loader!css!less' },
+            // { test: /\.css$/, loader: 'style-loader!css-loader' },
+            {
+                test: /\.css/,
+                loader: [
+                    'style',
+                    'css?modules&camelCase&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:8]',
+                ]
+            },
+            { test: /\.less$/, loader: [
+                'style',
+                'css?modules&camelCase&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:8]',
+                'less'
+            ] },
             { test: /\.scss$/, loader: 'style-loader!css!sass' },
 
             { test: /\.(jpeg|jpg|gif|png)$/, loader: "url-loader?limit=8192&name=images/[hash:8].[name].[ext]" },
@@ -41,7 +52,9 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 query: {
-                    presets:['react','es2015','react-hmre']
+                    presets:['react', 'es2015', 'stage-0', 'react-hmre'],
+                    plugins: ['transform-runtime', 'add-module-exports'],
+                    cacheDirectory: true,
                 }
             }
         ],
@@ -59,14 +72,14 @@ module.exports = {
         ]
     },
 
-    devServer: {
+    /*devServer: {
         hot: true,
         inline: true,
         progress: true,
         host:'0.0.0.0',
         openPage: 'public/index.html',
         proxy: {
-          '/api/*': {
+          '/api/!*': {
             target: 'http://192.168.11.234:3001',
             secure:false,
             pathRewrite: {
@@ -77,7 +90,7 @@ module.exports = {
     },
     historyApiFallback: {
         index: '/home',
-    },
+    },*/
 
     plugins: [
         //代码压缩(webpack内建插件webPack.optimize.UglifyJsPlugin)
