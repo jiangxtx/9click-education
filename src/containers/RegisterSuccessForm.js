@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { Form, Icon, Input, Button, Checkbox } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../layout'
 import { COMMON_FORM_INFO } from '../Config/constants'
-import '../css/home/login.css'
+import '../css/home/login.less'
 const FormItem = Form.Item;
 
 const RegisterSuccessForm = Form.create()( React.createClass({

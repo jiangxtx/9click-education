@@ -7,7 +7,7 @@ import { Link } from 'react-router'
 import { Icon, Table } from 'antd'
 import { Row, Col } from '../layout'
 
-import '../css/components/dataTable.css'
+import '../css/components/dataTable.less'
 
 const DataTable = (props) => {
     const { columns, dataSource } = props;

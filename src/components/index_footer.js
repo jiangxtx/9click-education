@@ -1,6 +1,6 @@
 import React, { Component, ProTypes } from 'react';
 
-import '../css/home/index_foot.css';
+import '../css/home/index_foot.less';
 
 import QRcode from '../img/home/QRcode.png'
 

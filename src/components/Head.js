@@ -1,4 +1,4 @@
-import '../css/home/index_head.css'
+import '../css/home/index_head.less'
 
 import React ,{Component}from  'react'
 import { Menu,Row,Col,Input,Icon,Modal,Form,Radio,notification} from 'antd'

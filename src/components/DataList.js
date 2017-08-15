@@ -8,7 +8,7 @@ import { Link } from 'react-router'
 import { Icon } from 'antd'
 import { Row, Col } from '../layout'
 
-import '../css/components/datalist.css'
+import '../css/components/datalist.less'
 
 const Col3List = (props) => {
     const { item, showIcon } = props;

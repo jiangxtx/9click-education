@@ -17,7 +17,7 @@
 
 import React, { Component, PropTypes } from 'react'
 import { Pagination } from 'antd'
-import '../css/components/paginateMid.css'
+import '../css/components/paginateMid.less'
 
 export default class PaginateMid extends Component {
     constructor(props) {

@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { Card, Form, Icon, Input, Button, Checkbox } from 'antd'
 import { Container, ContainerFluid, Row, Col } from '../layout'
 import { drawNetCanvas } from '../Tool/drawNetCanvas'
-import '../css/home/login.css'
+import '../css/home/login.less'
 
 const FormItem = Form.Item;
 const canvasId = 'netsBackground';

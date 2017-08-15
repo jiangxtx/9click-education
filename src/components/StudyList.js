@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import { Card } from 'antd'
 import { Col2List } from './DataList'
 
-import '../css/components/homelist.css'
+import '../css/components/homelist.less'
 
 export default class HomeList extends Component {
     constructor(props) {

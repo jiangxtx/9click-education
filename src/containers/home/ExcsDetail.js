@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, message } from 'antd'
 import { Container, Row, Col } from '../../layout'
-import '../../css/newsDetail.css'
+import '../../css/newsDetail.less'
 import { MESSAGE_CONFIG } from '../../Config/constants'
 
 message.config(MESSAGE_CONFIG);

@@ -10,7 +10,7 @@ const router = new Router({
     prefix: '/user',
 })
 
-router.get('/getUserInfo', user.getUserInfo())
-router.get('/getUsersList', user.getUsersList())
+router.get('/getUserInfo', user.getUserInfo)
+router.get('/getUsersList', user.getUsersList)
 
 export default router
